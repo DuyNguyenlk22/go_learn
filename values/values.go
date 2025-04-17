@@ -1,8 +1,8 @@
-package main
+package values
 
 import "fmt"
 
-func main() {
+func Values() {
 	fmt.Println("go" + "lang")
 	fmt.Println(true || false)
 	fmt.Println("1+1 =", 1+1)

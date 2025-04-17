@@ -1,12 +1,25 @@
-// package main
+package main
 
-// import (
-// 	"fmt"
+import (
+	"example/loop"
+	"example/values"
+	"fmt"
 
-// 	"rsc.io/quote"
-// )
+	"example.com/greetings"
+	"rsc.io/quote"
+)
 
-// func main() {
-//     fmt.Println(quote.Go())
-// 	fmt.Println("Hello World !")
-// }
+
+func basicTypes() {
+	ToBe := false
+	fmt.Printf("Type: %T value %v\n", ToBe, ToBe)
+}
+
+func main() {
+    fmt.Println(quote.Opt())
+	fmt.Println(quote.Hello())
+	basicTypes()
+	values.Values()
+	loop.Loop()
+	greetings.Hello("Duy Nguyen")
+}
