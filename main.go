@@ -1,11 +1,10 @@
 package main
 
 import (
-	"example/loop"
-	"example/values"
+	"example/array"
+
 	"fmt"
 
-	"example.com/greetings"
 	"rsc.io/quote"
 )
 
@@ -18,8 +17,9 @@ func basicTypes() {
 func main() {
     fmt.Println(quote.Opt())
 	fmt.Println(quote.Hello())
-	basicTypes()
-	values.Values()
-	loop.Loop()
-	greetings.Hello("Duy Nguyen")
+	// basicTypes()
+	// values.Values()
+	// loop.Loop()
+	// greetings.Hello("Duy Nguyen")
+	array.Arr()
 }

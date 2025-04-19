@@ -3,9 +3,7 @@ module example/hello
 go 1.24.2
 
 require (
-	example.com/greetings v0.0.0-00010101000000-000000000000
-	example/loop v0.0.0-00010101000000-000000000000
-	example/values v0.0.0-00010101000000-000000000000
+	example/array v0.0.0-00010101000000-000000000000
 	rsc.io/quote v1.5.2
 )
 
@@ -19,3 +17,5 @@ replace example.com/greetings => ./greetings
 replace example/values => ./values
 
 replace example/loop => ./loop
+
+replace example/array => ./array
