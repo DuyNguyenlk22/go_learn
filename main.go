@@ -1,11 +1,7 @@
 package main
 
 import (
-	"example/array"
-
 	"fmt"
-
-	"rsc.io/quote"
 )
 
 
@@ -14,12 +10,29 @@ func basicTypes() {
 	fmt.Printf("Type: %T value %v\n", ToBe, ToBe)
 }
 
+func learnDefer(){
+	//? Before func learnDefer end => execute defer
+	//? LIFO
+	defer fmt.Println("World")
+
+	fmt.Println("Hello")
+
+	fmt.Println("counting")
+
+	for i := 0; i < 10; i++ {
+		defer fmt.Println(i) 
+	}
+
+	fmt.Println("done")
+}
+
 func main() {
-    fmt.Println(quote.Opt())
-	fmt.Println(quote.Hello())
+    // fmt.Println(quote.Opt())
+	// fmt.Println(quote.Hello())
+	learnDefer()
 	// basicTypes()
 	// values.Values()
 	// loop.Loop()
 	// greetings.Hello("Duy Nguyen")
-	array.Arr()
+	// array.Arr()
 }
