@@ -2,16 +2,6 @@ module example/hello
 
 go 1.24.2
 
-require (
-	example/array v0.0.0-00010101000000-000000000000
-	rsc.io/quote v1.5.2
-)
-
-require (
-	golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c // indirect
-	rsc.io/sampler v1.3.0 // indirect
-)
-
 replace example.com/greetings => ./greetings
 
 replace example/values => ./values
@@ -19,3 +9,7 @@ replace example/values => ./values
 replace example/loop => ./loop
 
 replace example/array => ./array
+
+replace example/conditions => ./conditions
+
+require example/conditions v0.0.0-00010101000000-000000000000

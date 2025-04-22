@@ -1,16 +1,17 @@
 package main
 
 import (
+	"example/conditions"
+
 	"fmt"
 )
-
 
 func basicTypes() {
 	ToBe := false
 	fmt.Printf("Type: %T value %v\n", ToBe, ToBe)
 }
 
-func learnDefer(){
+func learnDefer() {
 	//? Before func learnDefer end => execute defer
 	//? LIFO
 	defer fmt.Println("World")
@@ -20,19 +21,21 @@ func learnDefer(){
 	fmt.Println("counting")
 
 	for i := 0; i < 10; i++ {
-		defer fmt.Println(i) 
+		defer fmt.Println(i)
 	}
 
 	fmt.Println("done")
 }
 
 func main() {
-    // fmt.Println(quote.Opt())
+	// fmt.Println(quote.Opt())
 	// fmt.Println(quote.Hello())
-	learnDefer()
+	//learnDefer()
 	// basicTypes()
 	// values.Values()
 	// loop.Loop()
 	// greetings.Hello("Duy Nguyen")
 	// array.Arr()
+	conditions.LearnConditions()
+	conditions.LearnSwitchCase()
 }
