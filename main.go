@@ -1,8 +1,7 @@
 package main
 
 import (
-	"example/conditions"
-
+	"example/pointers"
 	"fmt"
 )
 
@@ -36,6 +35,7 @@ func main() {
 	// loop.Loop()
 	// greetings.Hello("Duy Nguyen")
 	// array.Arr()
-	conditions.LearnConditions()
-	conditions.LearnSwitchCase()
+	//conditions.LearnConditions()
+	//conditions.LearnSwitchCase()
+	pointers.Pointers()
 }

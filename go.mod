@@ -12,4 +12,6 @@ replace example/array => ./array
 
 replace example/conditions => ./conditions
 
-require example/conditions v0.0.0-00010101000000-000000000000
+replace example/pointers => ./pointers
+
+require example/pointers v0.0.0-00010101000000-000000000000
