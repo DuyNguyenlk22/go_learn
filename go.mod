@@ -14,4 +14,9 @@ replace example/conditions => ./conditions
 
 replace example/pointers => ./pointers
 
-require example/pointers v0.0.0-00010101000000-000000000000
+replace example/struct => ./struct
+
+require (
+	example/pointers v0.0.0-00010101000000-000000000000
+	example/struct v0.0.0-00010101000000-000000000000
+)

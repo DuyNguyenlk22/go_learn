@@ -2,7 +2,7 @@ package pointers
 
 import "fmt"
 
-var p *int
+var p *int // declare a pointer p
 
 func Pointers() {
 	i, j := 42, 2701

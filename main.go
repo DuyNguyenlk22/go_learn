@@ -1,7 +1,8 @@
 package main
 
 import (
-	"example/pointers"
+	structSyntax "example/struct"
+
 	"fmt"
 )
 
@@ -37,5 +38,6 @@ func main() {
 	// array.Arr()
 	//conditions.LearnConditions()
 	//conditions.LearnSwitchCase()
-	pointers.Pointers()
+	// pointers.Pointers()
+	structSyntax.StructSyntax()
 }
