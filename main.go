@@ -1,7 +1,7 @@
 package main
 
 import (
-	structSyntax "example/struct"
+	"example/maps"
 
 	"fmt"
 )
@@ -39,5 +39,7 @@ func main() {
 	//conditions.LearnConditions()
 	//conditions.LearnSwitchCase()
 	// pointers.Pointers()
-	structSyntax.StructSyntax()
+	// structSyntax.StructSyntax()
+	// slices.LearSlices()
+	maps.LearMaps()
 }

@@ -16,7 +16,8 @@ replace example/pointers => ./pointers
 
 replace example/struct => ./struct
 
-require (
-	example/pointers v0.0.0-00010101000000-000000000000
-	example/struct v0.0.0-00010101000000-000000000000
-)
+replace example/slices => ./slices
+
+replace example/maps => ./maps
+
+require example/maps v0.0.0-00010101000000-000000000000
